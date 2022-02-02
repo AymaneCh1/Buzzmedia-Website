@@ -1,0 +1,27 @@
+$primary-color: red;
+$text-color: #222;
+$bg-color: #f7f7f7;
+$fonts: "Montserrat", sans-serif;
+$font-weights: (
+  "regular": 400,
+  "bold": 700,
+);
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 65.2%;
+}
+
+body {
+  font-family: $fonts;
+  font-weight: map-get($font-weights, regular);
+  background-color: $bg-color;
+  color: $text-color;
+}
