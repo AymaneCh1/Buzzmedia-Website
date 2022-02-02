@@ -1,4 +1,4 @@
-$primary-color: red;
+$primary-color: #d91e41;
 $text-color: #222;
 $bg-color: #f7f7f7;
 $fonts: "Montserrat", sans-serif;
@@ -40,4 +40,55 @@ h3 {
 
 p {
   font-size: 1.953rem;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: $text-color;
+  font-size: 1.3rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.flex-item {
+  flex: 1;
+}
+
+header {
+  padding: 2rem;
+
+  img {
+    width: 15rem;
+  }
+  nav {
+  }
+  ul {
+    list-style: none;
+
+    li {
+      a:link,
+      a:visited {
+        transition: all 0.2s ease;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
+  .cta {
+    color: $primary-color;
+  }
+}
+
+img {
+  display: block;
+  width: 100%;
 }
